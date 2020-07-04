@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "This project is a template for my JavaScript projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tirthajyoti-ghosh/restaurant-page.git"
+  },
+  "author": "Tirthajyoti Ghosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tirthajyoti-ghosh/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/tirthajyoti-ghosh/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
