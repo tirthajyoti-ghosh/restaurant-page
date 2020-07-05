@@ -17,6 +17,8 @@ header nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: fixed;
+  top: 0px;
 }
 
 nav #logo {
@@ -47,6 +49,7 @@ nav .nav-list {
 #content .home {
   display: flex;
   height: calc(100vh - 96.14px);
+  margin-top: 96.14px;
 }
 
 .home .left {
