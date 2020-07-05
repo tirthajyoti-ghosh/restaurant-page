@@ -19,6 +19,7 @@ header nav {
   width: 100%;
   position: fixed;
   top: 0px;
+  z-index: 9999;
 }
 
 nav #logo {
@@ -62,17 +63,17 @@ nav .nav-list {
   color: #fff;
 }
 
-.left .text {
+.left .home__text {
   margin: -150px 60px 0 60px;
 }
 
-.text .heading {
+.home__text .home__heading {
   font-size: 60px;
   line-height: 70px;
   font-weight: 700;
 }
 
-.text .cta-btn {
+.home__text .cta-btn {
   display: inline-block;
   margin: 20px 0;
   padding: 15px 40px;
@@ -103,7 +104,7 @@ nav .nav-list {
   background-repeat: no-repeat;
 }
 
-.about .text {
+.about .about__text {
   position: absolute;
   top: 60px;
   right: 0;
@@ -113,13 +114,13 @@ nav .nav-list {
   padding: 50px 60px;
 }
 
-.text .heading {
+.about__text .about__heading {
   font-size: 38px;
   line-height: 44px;
   font-weight: 700;
 }
 
-.text .para {
+.about__text .para {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
