@@ -43,3 +43,49 @@ nav .nav-list {
   background-color: #f87107;
   border-radius: 45px;
 }
+
+#content .home {
+  display: flex;
+  height: calc(100vh - 96.14px);
+}
+
+.home .left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #161616;
+  color: #fff;
+}
+
+.left .text {
+  margin: -150px 60px 0 60px;
+}
+
+.text .heading {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.text .cta-btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 15px 40px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  font-size: 19px;
+}
+
+.home .right {
+  height: 100%;
+  width: 50%;
+}
+
+.right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
