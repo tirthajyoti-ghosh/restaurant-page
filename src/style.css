@@ -92,3 +92,36 @@ nav .nav-list {
   object-fit: cover;
 }
 
+#content .about {
+  margin: 130px 0;
+  position: relative;
+  height: 700px;
+  max-width: 1440px;
+  background-image: url('https://uploads-ssl.webflow.com/5d3819c2c65d403ab61fe6cd/5d44a22a0ae4a1d928db9815_MK4L8450.jpg');
+  background-position: 50% 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about .text {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 50%;
+  height: 60vh;
+  background-color: #fff;
+  padding: 50px 60px;
+}
+
+.text .heading {
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.text .para {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+}
