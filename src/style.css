@@ -27,7 +27,7 @@ nav #logo {
 }
 
 nav .nav-list {
-  width: 35%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,5 +124,37 @@ nav .nav-list {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  margin-top: 20px;
+}
+
+.products .products__heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 44px;
+}
+
+.products .products__list {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products__list .product {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 1;
+  padding: 20px 30px;
+  width: 33.33333333%;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product .name {
   margin-top: 20px;
 }
