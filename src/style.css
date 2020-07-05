@@ -127,6 +127,10 @@ nav .nav-list {
   margin-top: 20px;
 }
 
+#content .products {
+  margin-top: 96.14px;
+}
+
 .products .products__heading {
   text-align: center;
   font-weight: 700;
@@ -142,11 +146,7 @@ nav .nav-list {
 }
 
 .products__list .product {
-  float: left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 1;
+  text-align: center;
   padding: 20px 30px;
   width: 33.33333333%;
 }
@@ -157,4 +157,36 @@ nav .nav-list {
 
 .product .name {
   margin-top: 20px;
+}
+
+#content .branches {
+  margin-top: 96.14px;
+}
+
+.branches .branches__heading {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.branches .branch__list {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.branch__list .branch {
+  width: 50%;
+  padding: 10px;
+}
+
+.branch img {
+  width: 100%;
+}
+
+.branch .branch__heading {
+  margin: 20px 0;
+  width: 50%;
 }
