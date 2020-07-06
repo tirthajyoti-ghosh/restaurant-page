@@ -1,4 +1,7 @@
 import './style.css';
+import about from './about.js';
+import products from './products.js';
+import branches from './branches.js';
 
 const content = document.getElementById('content');
 
@@ -97,3 +100,6 @@ const home = (() => {
 })();
 
 content.appendChild(home);
+content.appendChild(about);
+content.appendChild(products);
+content.appendChild(branches);
