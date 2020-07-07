@@ -1,0 +1,39 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "This project is a template for my JavaScript projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tirthajyoti-ghosh/restaurant-page.git"
+  },
+  "author": "Tirthajyoti Ghosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tirthajyoti-ghosh/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/tirthajyoti-ghosh/restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.17.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
+}
