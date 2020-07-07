@@ -7,59 +7,61 @@ import branches from './js/branches';
 const content = document.getElementById('content');
 
 const header = (() => {
-  const header = document.createElement('header');
-  const nav = document.createElement('nav');
-  const link = document.createElement('a');
-  link.setAttribute('href', '#');
-  link.setAttribute('id', 'logo');
+  const link = () => {
+    const logoLink = document.createElement('a');
+    logoLink.setAttribute('href', '#');
+    logoLink.setAttribute('id', 'logo');
 
-  const img = document.createElement('img');
-  img.setAttribute('src', 'https://uploads-ssl.webflow.com/5d3819c2c65d403ab61fe6cd/5d38248bc65d40b464206a96_logo-white.png');
-  img.setAttribute('width', '70');
+    const logoImg = document.createElement('img');
+    logoImg.setAttribute('src', 'https://uploads-ssl.webflow.com/5d3819c2c65d403ab61fe6cd/5d38248bc65d40b464206a96_logo-white.png');
+    logoImg.setAttribute('width', '70');
+    logoLink.appendChild(logoImg);
 
-  link.appendChild(img);
+    return logoLink;
+  };
 
-  nav.appendChild(link);
+  const ul = () => {
+    const navList = document.createElement('ul');
+    navList.setAttribute('class', 'nav-list');
 
-  const ul = document.createElement('ul');
-  ul.setAttribute('class', 'nav-list');
+    const li = (linkText) => {
+      const listItem = document.createElement('li');
+      listItem.setAttribute('class', 'nav-links active');
 
-  const li1 = document.createElement('li');
-  li1.setAttribute('class', 'nav-links active');
+      const navLink = document.createElement('a');
+      navLink.setAttribute('href', '#');
+      navLink.innerText = linkText;
 
-  const li2 = document.createElement('li');
-  li2.setAttribute('class', 'nav-links');
+      listItem.appendChild(navLink);
 
-  const li3 = document.createElement('li');
-  li3.setAttribute('class', 'nav-links');
+      return listItem;
+    };
 
-  const li1a = document.createElement('a');
-  li1a.setAttribute('href', '#');
-  li1a.innerText = 'Who we are?';
+    navList.appendChild(li('Who we are?'));
+    navList.appendChild(li('Products'));
+    navList.appendChild(li('Branches'));
 
-  li1.appendChild(li1a);
+    return navList;
+  };
 
-  const li2a = document.createElement('a');
-  li2a.setAttribute('href', '#');
-  li2a.innerText = 'Products';
+  const nav = () => {
+    const navBar = document.createElement('nav');
 
-  li2.appendChild(li2a);
+    navBar.appendChild(link());
+    navBar.appendChild(ul());
 
-  const li3a = document.createElement('a');
-  li3a.setAttribute('href', '#');
-  li3a.innerText = 'Branches';
+    return navBar;
+  };
 
-  li3.appendChild(li3a);
+  const header = () => {
+    const headerTag = document.createElement('header');
+    headerTag.appendChild(nav());
 
-  ul.appendChild(li1);
-  ul.appendChild(li2);
-  ul.appendChild(li3);
+    return headerTag;
+  };
 
-  nav.appendChild(ul);
 
-  header.appendChild(nav);
-
-  return header;
+  return header();
 })();
 
 content.appendChild(header);
