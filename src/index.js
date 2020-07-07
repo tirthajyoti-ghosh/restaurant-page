@@ -23,7 +23,7 @@ const tabSwitcher = (section) => {
 const header = (() => {
   const link = () => {
     const logoLink = document.createElement('a');
-    logoLink.setAttribute('href', '#');
+    logoLink.setAttribute('href', '');
     logoLink.setAttribute('id', 'logo');
 
     const logoImg = document.createElement('img');
@@ -42,7 +42,7 @@ const header = (() => {
       const listItem = document.createElement('li');
 
       const navLink = document.createElement('a');
-      navLink.setAttribute('href', '#');
+      navLink.setAttribute('href', '');
       navLink.setAttribute('class', 'nav-links');
       navLink.innerText = linkText;
 

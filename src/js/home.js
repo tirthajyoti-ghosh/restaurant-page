@@ -14,7 +14,7 @@ const home = (() => {
   homeText.appendChild(homeHeading);
 
   const ctaBtn = document.createElement('a');
-  ctaBtn.setAttribute('href', '#');
+  ctaBtn.setAttribute('href', '');
   ctaBtn.setAttribute('class', 'cta-btn');
   ctaBtn.innerText = 'What are you waiting for? ';
   homeText.appendChild(ctaBtn);
