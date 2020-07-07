@@ -1,7 +1,7 @@
-import './style.css';
-import about from './about.js';
-import products from './products.js';
-import branches from './branches.js';
+import './style/style.css';
+import about from './js/about.js';
+import products from './js/products.js';
+import branches from './js/branches.js';
 
 const content = document.getElementById('content');
 
