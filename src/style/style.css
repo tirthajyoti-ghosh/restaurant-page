@@ -42,7 +42,9 @@ nav .nav-list {
   line-height: 20px;
 }
 
-.nav-list .active {
+.nav-list .nav-links:hover,
+.nav-list .nav-links:focus,
+.nav-list .nav-links:active {
   background-color: #f87107;
   border-radius: 45px;
 }

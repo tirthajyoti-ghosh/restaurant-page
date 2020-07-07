@@ -26,7 +26,7 @@ const header = (() => {
 
     const li = (linkText) => {
       const listItem = document.createElement('li');
-      listItem.setAttribute('class', 'nav-links active');
+      listItem.setAttribute('class', 'nav-links');
 
       const navLink = document.createElement('a');
       navLink.setAttribute('href', '#');
