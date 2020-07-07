@@ -4,7 +4,7 @@ const branches = (() => {
 
   const branchesHeading = document.createElement('h2');
   branchesHeading.setAttribute('class', 'branches__heading');
-  branchesHeading.innerText = 'mussels';
+  branchesHeading.innerText = 'Visit Us';
 
   branchesSection.appendChild(branchesHeading);
 

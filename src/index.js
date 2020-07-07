@@ -6,11 +6,21 @@ import branches from './js/branches';
 
 const content = document.getElementById('content');
 
-const header = (() => {
-  const tabSwitcher = (section) => {
-    console.log(section);
-  };
+const tabSwitcher = (section) => {
+  content.removeChild(content.childNodes[1]);
 
+  if (section === 'home') {
+    content.appendChild(home);
+  } else if (section === 'about') {
+    content.appendChild(about);
+  } else if (section === 'products') {
+    content.appendChild(products);
+  } else {
+    content.appendChild(branches);
+  }
+};
+
+const header = (() => {
   const link = () => {
     const logoLink = document.createElement('a');
     logoLink.setAttribute('href', '#');
@@ -30,10 +40,10 @@ const header = (() => {
 
     const li = (linkText, section) => {
       const listItem = document.createElement('li');
-      listItem.setAttribute('class', 'nav-links');
 
       const navLink = document.createElement('a');
       navLink.setAttribute('href', '#');
+      navLink.setAttribute('class', 'nav-links');
       navLink.innerText = linkText;
 
       navLink.addEventListener('click', () => { tabSwitcher(section); });
@@ -43,7 +53,8 @@ const header = (() => {
       return listItem;
     };
 
-    navList.appendChild(li('Who we are?', 'about'));
+    navList.appendChild(li('Home', 'home'));
+    navList.appendChild(li('About', 'about'));
     navList.appendChild(li('Products', 'products'));
     navList.appendChild(li('Branches', 'branches'));
 
@@ -66,13 +77,8 @@ const header = (() => {
     return headerTag;
   };
 
-
   return header();
 })();
 
 content.appendChild(header);
-
 content.appendChild(home);
-content.appendChild(about);
-content.appendChild(products);
-content.appendChild(branches);

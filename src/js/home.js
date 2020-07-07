@@ -10,13 +10,13 @@ const home = (() => {
 
   const homeHeading = document.createElement('h1');
   homeHeading.setAttribute('class', 'home__heading');
-  homeHeading.innerText = 'Hot and fresh mussels in pots.';
+  homeHeading.innerText = 'Hot and fresh mussels in pots 😋!';
   homeText.appendChild(homeHeading);
 
   const ctaBtn = document.createElement('a');
   ctaBtn.setAttribute('href', '#');
   ctaBtn.setAttribute('class', 'cta-btn');
-  ctaBtn.innerText = 'Products';
+  ctaBtn.innerText = 'What are you waiting for? ';
   homeText.appendChild(ctaBtn);
 
   leftDiv.appendChild(homeText);
