@@ -19,11 +19,11 @@ const products = (() => {
     img.setAttribute('src', src);
 
     productDiv.appendChild(img);
-    
+
     const heading = document.createElement('h3');
     heading.setAttribute('class', 'name');
     heading.innerText = name;
-    
+
     productDiv.appendChild(heading);
 
     return productDiv;

@@ -1,8 +1,8 @@
 import './style/style.css';
-import home from './js/home.js';
-import about from './js/about.js';
-import products from './js/products.js';
-import branches from './js/branches.js';
+import home from './js/home';
+import about from './js/about';
+import products from './js/products';
+import branches from './js/branches';
 
 const content = document.getElementById('content');
 
@@ -44,7 +44,7 @@ const header = (() => {
   li2a.innerText = 'Products';
 
   li2.appendChild(li2a);
-  
+
   const li3a = document.createElement('a');
   li3a.setAttribute('href', '#');
   li3a.innerText = 'Branches';

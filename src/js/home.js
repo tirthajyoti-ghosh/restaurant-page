@@ -12,7 +12,7 @@ const home = (() => {
   homeHeading.setAttribute('class', 'home__heading');
   homeHeading.innerText = 'Hot and fresh mussels in pots.';
   homeText.appendChild(homeHeading);
-  
+
   const ctaBtn = document.createElement('a');
   ctaBtn.setAttribute('href', '#');
   ctaBtn.setAttribute('class', 'cta-btn');
