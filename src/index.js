@@ -7,6 +7,10 @@ import branches from './js/branches';
 const content = document.getElementById('content');
 
 const header = (() => {
+  const tabSwitcher = (section) => {
+    console.log(section);
+  };
+
   const link = () => {
     const logoLink = document.createElement('a');
     logoLink.setAttribute('href', '#');
@@ -24,7 +28,7 @@ const header = (() => {
     const navList = document.createElement('ul');
     navList.setAttribute('class', 'nav-list');
 
-    const li = (linkText) => {
+    const li = (linkText, section) => {
       const listItem = document.createElement('li');
       listItem.setAttribute('class', 'nav-links');
 
@@ -32,14 +36,16 @@ const header = (() => {
       navLink.setAttribute('href', '#');
       navLink.innerText = linkText;
 
+      navLink.addEventListener('click', () => { tabSwitcher(section); });
+
       listItem.appendChild(navLink);
 
       return listItem;
     };
 
-    navList.appendChild(li('Who we are?'));
-    navList.appendChild(li('Products'));
-    navList.appendChild(li('Branches'));
+    navList.appendChild(li('Who we are?', 'about'));
+    navList.appendChild(li('Products', 'products'));
+    navList.appendChild(li('Branches', 'branches'));
 
     return navList;
   };
