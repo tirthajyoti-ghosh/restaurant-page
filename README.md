@@ -36,6 +36,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@terrific_ghosh](https://twitter.com/terrific_ghosh)
 - Linkedin: [Tirthajyoti Ghosh](https://www.linkedin.com/in/tirthajyoti-ghosh/)
 
+## Acknowledgement
+
+- Microverse
+- Original Design - [https://tenceremidye.webflow.io/](https://tenceremidye.webflow.io/)
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
