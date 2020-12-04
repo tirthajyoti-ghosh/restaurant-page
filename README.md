@@ -19,7 +19,7 @@ It displays my skills in using JS(ES6) and configuring webpack to handle several
 
 ## Live Demo
 
-Check the [live Demo](https://rawcdn.githack.com/tirthajyoti-ghosh/restaurant-page/5fd108cd132d5fecf16df9799e6ff023ba938161/dist/index.html).
+Check the [live Demo](https://rawcdn.githack.com/tirthajyoti-ghosh/restaurant-page/3cdf2f15a943166eeb942e9645e678c9c0a53e47/dist/index.html).
 
 
 ## Getting Started
