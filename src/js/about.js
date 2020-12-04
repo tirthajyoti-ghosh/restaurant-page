@@ -16,8 +16,12 @@ const about = (() => {
     aboutTextDiv.setAttribute('class', 'about__text');
 
     aboutTextDiv.appendChild(aboutHeading);
+
     aboutTextDiv.appendChild(para('Pots Midye is the first stop of street flavors we have established under the name of Seyyarhane. In our workshop, we produce mussels that we receive live from the relevant ministry-approved farms in accordance with the Turkish Food Codex and ship them to our branches.'));
+
     aboutTextDiv.appendChild(para('In addition to the traditional flavor, we bring a new breath to the street kitchen with our different recipes, always hot, fresh and pots of mussels cooked specially for you whenever you want.'));
+
+    aboutTextDiv.appendChild(para('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci facere debitis explicabo reprehenderit doloremque nisi possimus ducimus voluptatum beatae atque quisquam dolorem reiciendis itaque autem odio, qui nemo, fugiat perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit.'));
 
     return aboutTextDiv;
   };
